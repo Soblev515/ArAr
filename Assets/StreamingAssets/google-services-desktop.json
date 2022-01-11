@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1025268109875",
+    "firebase_url": "https://projectar-26820-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "projectar-26820",
+    "storage_bucket": "projectar-26820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025268109875:android:0741dcffdf27e5959bc946",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.NewAR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025268109875-hngp5fidqa6l312pl8biljirogkmedtb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpDqH9HqyUW5t6-v14KkNAJCtI_oWi15A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025268109875-hngp5fidqa6l312pl8biljirogkmedtb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1025268109875-9k4hvt7p4jnutnscbipp2e7ia0hd8m3l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DefaultCompany.Mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
