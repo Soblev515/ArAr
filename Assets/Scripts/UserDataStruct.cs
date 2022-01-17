@@ -10,5 +10,5 @@ public struct UserDataStruct
     public string IMG { get; set; }
 
     [FirestoreProperty]
-    private string compitedQuest { get; set; }
+    public string[] compitedQuest { get; set; }
 }

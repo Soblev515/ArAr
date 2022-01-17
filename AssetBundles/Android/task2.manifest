@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1581673814
+CRC: 2644918721
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5e758fa02b06b99c43c64546d798396b
+    Hash: 6be34ed6712fd37566d6785adcc09eb7
   TypeTreeHash:
     serializedVersion: 2
-    Hash: da68c9f32cd500c4371454b18568185c
+    Hash: 35b5a567fe8a36a7208510bad2ec0f28
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -29,6 +29,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 64
   Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
 - Class: 104
   Script: {instanceID: 0}
 - Class: 108
@@ -38,7 +40,11 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fa850fbd5b8aded44846f96e35f1a9f5, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 3aa49dde8f8fa004da0af1fa7dc21bed, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8eab0326ed39a944dbbc6996b1ff6827, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
 - Class: 114
@@ -48,9 +54,11 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: c51aaf19af462b3478b93d30d3aaaf3a, type: 3}
+  Script: {fileID: 11500000, guid: 737715e08c249174f9d85204c2db171a, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3859a92a05d4f5d418cb6ca605290e74, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f74c645c985a0fa4687523f9e72b4311, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
 - Class: 114
@@ -65,6 +73,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4df4ebbda30e065489fccf1246afb5a6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
 - Class: 115

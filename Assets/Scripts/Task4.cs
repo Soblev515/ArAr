@@ -11,27 +11,9 @@ public class Task4 : MonoBehaviour
     [SerializeField]
     List<string> answers;
     private int count = 0;
-    private List<string> usedAnswers = new List<string>(4);
-
-
-
-    // Update is called once per frame
-    /*public void CheckAnswers()
-    {
-        int count = 0;
-        List<string> usedAnswers = new List<string>(4);
-
-        for (int i = 0; i < 4; i++) 
-        {
-            if (inputField.text == answers[i] & !usedAnswers.Contains(inputField.text))
-            {
-                count += 1;
-                usedAnswers.Add(inputField.text);
-            }
-            if (count == 4)
-                SceneManager.LoadScene("New Task 4.2");
-        }
-    }*/
+    private List<string> usedAnswers = new List<string>(3);
+    public FirebaseManagerMain ManagerMain;
+    public Text score;
 
     private void Start()
     {
@@ -48,14 +30,17 @@ public class Task4 : MonoBehaviour
             Debug.Log(count);
             usedAnswers.Add(inputField.text);
             t.text = "Ответ правильный";
+            score.text = count + "/3";
         }
         else
         {
             t.text = "Ответ неправильный";
         }
-        if (count == 4)
+        if (count == 3)
         {
-            SceneManager.LoadScene("New Task 4.2");
+            ChangedValue();
+            Info.CorrectStage += 1;
+            ManagerMain.LoadLevel();
         }
     }
 

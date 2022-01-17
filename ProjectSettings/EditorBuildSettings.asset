@@ -5,25 +5,40 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/AuthScene.unity
     guid: 7bd6eb9d72d733949969378a577e4d28
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 8a3dfbec23564ae4ca06d12acb5a3861
   - enabled: 0
-    path: Assets/Scenes/Task2.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Quest/Congratulations.unity
-    guid: 64c4dbb435da9d942bda35783e021d1e
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 655e0f9f7ea620c47b8526aff206cc01
+    path: Assets/Scenes/Task2.1.unity
+    guid: cba49314e0d9b9241a99bfd49bc64e2f
+  - enabled: 1
+    path: Assets/Scenes/Task3.1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Task4.1.unity
+    guid: 97b4bf119d935ac4c85cf9c38c5cbd2e
+  - enabled: 1
+    path: Assets/Scenes/Congratulations.unity
+    guid: 94c64bb8c5dbc994fa35a4f6aadffbd3
+  - enabled: 1
+    path: Assets/Scenes/Task2.unity
+    guid: 4250b74e1d8c48142ab5dec8711cb394
+  - enabled: 1
+    path: Assets/Scenes/Task3.unity
+    guid: d7b4849a3431e1642a4f52db91b76a3b
+  - enabled: 1
+    path: Assets/Scenes/Task4.unity
+    guid: 41b885cd54ef7264ca2088861c1e8e33
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 442713a25cfcd694f9d44bee8b5d1adb, type: 2}
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: bc03b3227e8fba640a742951cc7daf2f, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 0e97485f38eb7cd40bcb26c8681abaea, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 83b47e70aad589741b549793b581c703, type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 4d6e81ba7ba382343a093af560714b10, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4092c090392d18d42816808e79a8a8fa, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d1daf08f466b4bb4a9a772bcb69ef6be, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 04bb3da9628229848adcd872c44dacfa, type: 2}

@@ -19,7 +19,7 @@ public class GetInputOnClick : MonoBehaviour
     public void InputOnClick() 
     {
         Debug.Log("Log Input " + input.text);
-        if (input.text == answer)
+        if (input.text.ToLower() == answer.ToLower())
         {
             ChangedValue();
             Info.CorrectStage += 1;

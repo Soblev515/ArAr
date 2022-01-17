@@ -40,8 +40,14 @@ public class FirebaseManagerMain : MonoBehaviour
     public void SetProfile()
     {
         UserName.text = Info.user.Name != null ? Info.user.Name : "TEST";
-        //Подключить хранилище Firebase и обращаться к объекту и скачивать
-        //avatar.sprite = Info.user.Img;
+        var db = FirebaseFirestore.DefaultInstance.Collection("Users").Document(Info.Uid);
+        var data = db.GetSnapshotAsync().ContinueWith(snapshot =>
+        {
+            var user = snapshot.Result.ConvertTo<UserDataStruct>();
+            Info.user.compitedQuest = user.compitedQuest;
+        });
+            //Подключить хранилище Firebase и обращаться к объекту и скачивать
+            //avatar.sprite = Info.user.Img;
         Avatar.GetComponent<Image>().overrideSprite = Resources.Load("Assets/StreamingAssets/test.png") as Sprite;
     }
 
@@ -155,9 +161,29 @@ public class FirebaseManagerMain : MonoBehaviour
 
     public void LoadLevel()
     {
-        if (Info.CorrectStage == Info.StageURL.Length)
-            SceneManager.LoadScene("Congratulations");
-        else
-            ManagerRealtime.StartLevel(Info.CorrectStage);
+        Debug.Log(Info.CorrectStage);
+        Debug.Log(Info.StageURL.Length);
+        try
+        {
+            if (Info.CorrectStage == Info.StageURL.Length)
+            {
+                Info.user.compitedQuest = new string[3];
+                Info.user.compitedQuest[0] = "Знакомство с кампусом УрФУ";
+                Debug.Log(Info.user.compitedQuest[0]);
+                Dictionary<string, object> updates = new Dictionary<string, object> 
+                {
+                    {"compitedQuest", Info.user.compitedQuest[0]},
+                };
+                var db = FirebaseFirestore.DefaultInstance.Collection("Users").Document(Info.Uid);
+                db.UpdateAsync(updates);
+                SceneManager.LoadScene("Congratulations");
+            }
+            else
+                ManagerRealtime.StartLevel(Info.CorrectStage);
+        }
+        catch
+        {
+            Debug.Log("Cannot load Level? because data is empty");
+        }
     }
 }

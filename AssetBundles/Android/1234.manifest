@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1980555600
+CRC: 4066400904
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2f2ee9b67dd830c155eab018f8d1e357
+    Hash: 9b0ddd03e616ebfa93cb661e22cfcc1c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b19a7f629032750efed47c571a3afb31
+    Hash: ac6bd159aedc773dadd73858ca840c6c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,28 +17,16 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
-- Class: 23
-  Script: {instanceID: 0}
 - Class: 28
   Script: {instanceID: 0}
-- Class: 33
-  Script: {instanceID: 0}
-- Class: 43
-  Script: {instanceID: 0}
 - Class: 48
-  Script: {instanceID: 0}
-- Class: 64
   Script: {instanceID: 0}
 - Class: 81
   Script: {instanceID: 0}
 - Class: 104
   Script: {instanceID: 0}
-- Class: 108
-  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: fa850fbd5b8aded44846f96e35f1a9f5, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
 - Class: 114
@@ -47,8 +35,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 16cd67151b1263f4c836fd060c2b2a81, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 9dc8e136fcc81de49899602ec28c6e45, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: e80aacb069c4fd14b9e1c3ad23d3c836, type: 3}
 - Class: 114
@@ -62,21 +48,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 3859a92a05d4f5d418cb6ca605290e74, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 39fa3d8997a24136984ca6e2c99902bc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: b990f7217d3156a46845fa7194e5c756, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
@@ -84,13 +62,7 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
 - Class: 114
@@ -98,21 +70,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 1e1d5401573a9a840aba470d001e7eab, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 31c224996ee558746b172fb5e2b89c54, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: cc0d7ba7ff927d3438fad89cb2d1ee85, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f8ed44097af2ae4caa3634bf2344dc6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4df4ebbda30e065489fccf1246afb5a6, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: c51aaf19af462b3478b93d30d3aaaf3a, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -134,7 +100,5 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Scenes/Main.unity
-- Assets/Scenes/Task2.unity
 - Assets/Scenes/AuthScene.unity
-- Assets/Scenes/SampleScene.unity
 Dependencies: []

@@ -22,7 +22,15 @@ public class AssetBudleScene : MonoBehaviour
             using (WWW www = new WWW(Info.StageURL[i]))
             {
                 Debug.Log("I using www");
+                Debug.Log(www.url);
+                Debug.Log("http://localhost/task" + (i + 1));
                 yield return www;
+                if (www.url == "http://localhost/task"+(i + 1))
+                {
+                    Debug.Log("I load task");
+                    SceneManager.LoadScene("Task" + (i + 1));
+                }
+                Debug.Log("File in Firebase");
                 if (!string.IsNullOrEmpty(www.error))
                 {
                     Debug.Log(www.error);
@@ -33,6 +41,7 @@ public class AssetBudleScene : MonoBehaviour
         }
 
         string[] scenes = assetBundle.GetAllScenePaths();
+        //Debug.Log(scenes[1]);
         foreach(string s in scenes)
         {
             Debug.Log(s);

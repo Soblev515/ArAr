@@ -14,12 +14,14 @@ public class LoadFirebaseFirestore : MonoBehaviour
     public Text ShortDescription;
     public Image Image;
     public Transform root;
+    public bool isQuestList;
 
     public static Dictionary<string, Quest> Quests = new Dictionary<string, Quest>();
 
     public void Awake()
     {
         var db = FirebaseFirestore.DefaultInstance;
+        
         var docs = db.Collection("Quests");
         Lister(docs);
     }
@@ -61,25 +63,38 @@ public class LoadFirebaseFirestore : MonoBehaviour
                 Debug.Log(document);
                 var quest = document.ConvertTo<Quest>();
                 Debug.Log(document.Id);
-                if(!Quests.ContainsKey(document.Id))
+                if (!Quests.ContainsKey(document.Id))
                     Quests.Add(document.Id, quest);
-                storage.StartDownLoad(Image, "Quests/" + document.Id, "preview.jpg");
-                Debug.Log(quest.StageURL);
-                Debug.Log(quest.StageURL[0]);
 
-                NameButton.text = Quests[document.Id].Name;
-                ShortDescription.text = Quests[document.Id].ShortDescription;
+                if (isQuestList || (!isQuestList && questInArray(quest.Name)))
+                {
+                    storage.StartDownLoad(Image, "Quests/" + document.Id, "preview.jpg");
+                    Debug.Log(quest.StageURL);
+                    Debug.Log(quest.StageURL[0]);
 
-                Debug.Log("path: " + "Quests/" + document.Id);
-                Debug.Log("file name: " + quest.IMG);
-                
-                var clone = Instantiate(prefabButton.gameObject) as GameObject;
-                clone.name = document.Id;
-                clone.SetActive(true);
-                clone.transform.SetParent(root);
+                    NameButton.text = Quests[document.Id].Name;
+                    ShortDescription.text = Quests[document.Id].ShortDescription;
+
+                    Debug.Log("path: " + "Quests/" + document.Id);
+                    Debug.Log("file name: " + quest.IMG);
+
+                    var clone = Instantiate(prefabButton.gameObject) as GameObject;
+                    clone.name = document.Id;
+                    clone.SetActive(true);
+                    clone.transform.SetParent(root);
+                }
             }
         });
     }
 
+    private bool questInArray(string questName)
+    {
+        foreach (var data in Info.user.compitedQuest)
+        {
+            if (questName == data)
+                return true;
+        }
+        return false;
+    }
     
 }
